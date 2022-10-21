@@ -1,0 +1,39 @@
+{
+  "name": "template_test",
+  "version": "1.0.0",
+  "description": "Template to start typescript project",
+  "main": "main.ts",
+  "scripts": {
+    "init": "yarn install",
+    "dev": "ts-node ./src/main.ts",
+    "run": "node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "keywords": [
+    "template",
+    "typescript",
+    "javascript",
+    "mongoDB",
+    "init"
+  ],
+  "author": "Dh4rM4L",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "gts": "^3.1.1",
+    "typescript": "~4.7.0",
+    "@types/node": "^14.11.2"
+  }
+}
